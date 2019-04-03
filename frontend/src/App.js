@@ -6,6 +6,7 @@ import logger from 'redux-logger'
 import {createStore, combineReducers, applyMiddleware} from 'redux'
 import axios from "axios";
 import thunk from 'redux-thunk'
+import Facebook from './components/Facebook';
 
 
 
@@ -111,6 +112,8 @@ class App extends Component {
     render() {
         return (
             <Provider store={store}>
+                
+                <Facebook/>
                 <Bear />
             </Provider>
         );
